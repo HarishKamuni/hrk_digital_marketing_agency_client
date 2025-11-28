@@ -1,12 +1,11 @@
-import Grid from './components/Grid';
 import Navbar from './components/Navbar';
-import HeroPage from './pages/HeroPage';
+import HeroSection from './pages/HeroSection';
 
 function App() {
   return (
     <>
       <Navbar />
-      <HeroPage />
+      <HeroSection />
     </>
   );
 }
