@@ -7,18 +7,18 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="flex items-center justify-between p-4 bg-[#eae3ef] md:px-10 lg:px-16">
+      <nav className="flex items-center justify-between p-5 bg-gradient-to-r from-[#e8c8e8] md:px-10 lg:px-32">
         <img
           src="https://seoc-html-v2.vercel.app/assets/img/logo/logo1.png"
           alt="SEOC logo"
-          className="w-18 cursor-pointer md:w-30 lg:w-32"
+          className="w-18 cursor-pointer md:w-30 lg:w-36"
         />
         <Menu
           className="block cursor-pointer md:hidden"
           onClick={() => setShowMenu(true)}
         />
 
-        <ul className=" hidden md:flex md:gap-2 lg:gap-3 lg:text-xl">
+        <ul className=" hidden md:flex md:gap-2 lg:gap-10 lg:text-lg">
           <li>About</li>
           <li>Servises</li>
           <li>Works</li>
@@ -30,14 +30,14 @@ const Navbar = () => {
           <img
             src="https://seoc-html-v2.vercel.app/assets/img/icons/search-icons1.svg"
             alt="search icon"
-            className="w-4 cursor-pointer md:w-5 lg:w-7"
+            className="w-4 cursor-pointer md:w-5 lg:w-6"
             onClick={() => setShow(true)}
           />
           <div className="flex items-center gap-2 bg-[#7207b9] rounded-full px-1 py-1 lg:py-2 lg:px-2 cursor-pointer">
-            <h1 className="text-white text-sm capitalize pl-2 lg:text-xl lg:pl-2">
+            <h1 className="text-white text-sm capitalize pl-2 lg:text-lg lg:font-semibold lg:pl-2">
               free consultation
             </h1>
-            <MoveUpRight className="text-[#7207b9] bg-white rounded-full w-4 h-4 lg:w-7 lg:h-7" />
+            <ArrowUpRight className="text-[#7207b9] bg-white rounded-full w-4 h-4 lg:w-8  lg:h-8 lg:p-1" />
           </div>
         </div>
       </nav>
